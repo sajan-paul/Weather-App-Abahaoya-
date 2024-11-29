@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Weather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#785B7BBF"
+        android:hint="Enter City Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/getWeather"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cityName"
+        android:layout_marginTop="10dp"
+        android:background="#785B7BBF"
+        android:text="Get Weather" />
+
+    <TextView
+        android:id="@+id/weatherResult"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getWeather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="36dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+</RelativeLayout>
